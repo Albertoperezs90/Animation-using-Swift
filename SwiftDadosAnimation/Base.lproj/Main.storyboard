@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDadosAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cara0.png" translatesAutoresizingMaskIntoConstraints="NO" id="6k5-BG-h6w">
+                                <rect key="frame" x="16" y="30" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cara1.png" translatesAutoresizingMaskIntoConstraints="NO" id="klD-o5-be7">
+                                <rect key="frame" x="204" y="30" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cara2.png" translatesAutoresizingMaskIntoConstraints="NO" id="AN9-LV-nfy">
+                                <rect key="frame" x="110" y="170" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cara3.png" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-KK-XKJ">
+                                <rect key="frame" x="16" y="323" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cara5.png" translatesAutoresizingMaskIntoConstraints="NO" id="HoV-YO-BAZ">
+                                <rect key="frame" x="204" y="323" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrh-jf-ai7">
+                                <rect key="frame" x="124" y="475" width="73" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="JUGAR"/>
+                                <connections>
+                                    <action selector="spinDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFG-TJ-kCr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="dices" destination="klD-o5-be7" collectionClass="NSMutableArray" id="rXa-PF-IVu"/>
+                        <outletCollection property="dices" destination="AN9-LV-nfy" collectionClass="NSMutableArray" id="bqj-0m-iQj"/>
+                        <outletCollection property="dices" destination="mzL-KK-XKJ" collectionClass="NSMutableArray" id="FAQ-du-AU1"/>
+                        <outletCollection property="dices" destination="HoV-YO-BAZ" collectionClass="NSMutableArray" id="7UC-N5-qLP"/>
+                        <outletCollection property="dices" destination="6k5-BG-h6w" collectionClass="NSMutableArray" id="K6I-Ys-UPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="114.08450704225352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cara0.png" width="75" height="90"/>
+        <image name="cara1.png" width="75" height="90"/>
+        <image name="cara2.png" width="75" height="90"/>
+        <image name="cara3.png" width="75" height="90"/>
+        <image name="cara5.png" width="75" height="90"/>
+    </resources>
+</document>
